@@ -29,8 +29,8 @@ const RoomsSuites = () => {
         </div>
 
         <div className="relative">
-          <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-12 items-center">
-            <div className="relative aspect-[4/3] min-h-[320px] md:min-h-[400px] rounded-none overflow-hidden bg-gray-100 shadow-soft">
+          <div className="grid lg:grid-cols-[1.5fr_1fr] gap-8 lg:gap-12 items-center min-w-0">
+            <div className="relative aspect-[4/3] min-h-[320px] md:min-h-[400px] rounded-none overflow-hidden bg-gray-100 shadow-soft min-w-0 max-w-full">
               <Link to={`/rooms/${roomsList[current].slug}`} className="block w-full h-full">
                 <img
                   src={roomsList[current].image}
@@ -70,7 +70,7 @@ const RoomsSuites = () => {
                 ))}
               </div>
             </div>
-            <div>
+            <div className="min-w-0">
               <h3 className="font-display text-2xl md:text-3xl font-semibold text-brand-charcoal mb-2">
                 <Link to={`/rooms/${roomsList[current].slug}`} className="hover:text-brand-green transition-colors">
                   {roomsList[current].name}

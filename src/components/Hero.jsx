@@ -10,8 +10,8 @@ const Hero = () => {
       />
       {/* Light gradient overlay for readability – lets the bright image show through */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24 lg:pb-32">
-        <div className="max-w-3xl">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24 lg:pb-32 min-w-0">
+        <div className="max-w-3xl min-w-0 w-full">
           <p className="text-white/90 text-sm uppercase tracking-[0.25em] mb-4 font-medium">
             Stay with a View – Long Island City Awaits
           </p>
@@ -23,18 +23,18 @@ const Hero = () => {
             overlooking the Manhattan skyline, boutique comfort, and a prime location minutes from NYC.
           </p>
           <p className="text-white/80 text-sm mb-8">{SECURITY_DEPOSIT_NOTE}</p>
-          <div className="flex flex-col sm:flex-row gap-4">
+          <div className="flex flex-col sm:flex-row gap-4 w-full min-w-0">
             <a
               href={BOOKING_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-brand-charcoal font-semibold rounded-none hover:bg-brand-cream transition-colors"
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-4 bg-white text-brand-charcoal font-semibold rounded-none hover:bg-brand-cream transition-colors w-full sm:w-auto min-w-0 text-center text-balance break-words"
             >
               For Lowest Fares Book Directly on Hotel Website — Check Availability
             </a>
             <a
               href="#rooms"
-              className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-none hover:bg-white/15 transition-colors"
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-4 border-2 border-white text-white font-semibold rounded-none hover:bg-white/15 transition-colors w-full sm:w-auto min-w-0 shrink-0 text-center"
             >
               Explore Our Rooms
             </a>

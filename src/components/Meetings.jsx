@@ -6,8 +6,8 @@ const Meetings = () => {
   return (
     <section id="meetings" className="py-20 md:py-28 bg-brand-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
-          <div>
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center min-w-0">
+          <div className="min-w-0">
             <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-semibold text-brand-charcoal mb-4 tracking-tight">
               Meetings & Gatherings
             </h2>
@@ -24,7 +24,7 @@ const Meetings = () => {
               Inquire About Events
             </a>
           </div>
-          <div className="rounded-none overflow-hidden bg-white shadow-soft p-8 border border-brand-cream-dark/30">
+          <div className="rounded-none overflow-hidden bg-white shadow-soft p-8 border border-brand-cream-dark/30 min-w-0">
             <h3 className="font-display text-xl font-semibold text-brand-charcoal mb-4">
               Location
             </h3>

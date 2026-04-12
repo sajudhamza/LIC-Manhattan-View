@@ -47,15 +47,19 @@ const Navbar = () => {
         }`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
-          <div className="flex items-center justify-between h-16 md:h-20">
-            <Link to="/" className="flex items-center gap-3" onClick={closeMenu}>
+          <div className="flex items-center justify-between h-16 md:h-20 gap-2 min-w-0">
+            <Link
+              to="/"
+              className="flex items-center gap-2 sm:gap-3 min-w-0 flex-1"
+              onClick={closeMenu}
+            >
               <img
                 src={LOGO_URL}
                 alt="LIC Manhattan View Hotel"
-                className="h-9 md:h-10 w-auto object-contain"
+                className="h-9 md:h-10 w-auto object-contain shrink-0"
               />
               <span
-                className={`font-display text-xl md:text-2xl font-semibold tracking-tight ${
+                className={`font-display text-base sm:text-xl md:text-2xl font-semibold tracking-tight min-w-0 break-words leading-tight ${
                   useLightNav ? 'text-brand-charcoal' : 'text-white'
                 }`}
               >
@@ -63,7 +67,7 @@ const Navbar = () => {
               </span>
             </Link>
 
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2 sm:gap-4 shrink-0">
               <a
                 href={BOOKING_URL}
                 target="_blank"
@@ -105,18 +109,18 @@ const Navbar = () => {
         aria-label="Main menu"
       >
         <div className="min-h-full flex flex-col">
-          <div className="flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 lg:px-8 shrink-0">
+          <div className="flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 lg:px-8 shrink-0 gap-2 min-w-0">
             <Link
               to="/"
-              className="flex items-center gap-3 font-display text-xl md:text-2xl font-semibold text-brand-charcoal tracking-tight"
+              className="flex items-center gap-2 sm:gap-3 font-display text-base sm:text-xl md:text-2xl font-semibold text-brand-charcoal tracking-tight min-w-0 flex-1"
               onClick={closeMenu}
             >
               <img
                 src={LOGO_URL}
                 alt="LIC Manhattan View Hotel"
-                className="h-9 md:h-10 w-auto object-contain"
+                className="h-9 md:h-10 w-auto object-contain shrink-0"
               />
-              LIC Manhattan View Hotel
+              <span className="min-w-0 break-words leading-tight">LIC Manhattan View Hotel</span>
             </Link>
             <button
               type="button"

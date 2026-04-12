@@ -45,7 +45,7 @@ const Amenities = () => {
               <div className="flex-shrink-0 w-12 h-12 rounded-none bg-brand-cream-warm flex items-center justify-center">
                 <Icon className="w-6 h-6 text-brand-green" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <h3 className="font-display text-lg font-semibold text-brand-charcoal mb-1">
                   {label}
                 </h3>

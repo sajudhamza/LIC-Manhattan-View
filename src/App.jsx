@@ -11,7 +11,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col min-w-0 overflow-x-hidden">
       <Navbar />
       <main className="flex-1">
         <Routes>

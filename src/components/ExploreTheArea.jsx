@@ -33,7 +33,7 @@ const ExploreTheArea = () => {
               <Link
                 key={category.slug}
                 to={`/explore/${category.slug}`}
-                className="flex gap-5 p-7 rounded-none bg-brand-cream border border-transparent shadow-soft hover:shadow-soft-lg hover:border-brand-green/20 transition-all group"
+                className="flex gap-5 p-7 rounded-none bg-brand-cream border border-transparent shadow-soft hover:shadow-soft-lg hover:border-brand-green/20 transition-all group min-w-0"
               >
                 <div className="flex-shrink-0 w-12 h-12 rounded-none bg-white flex items-center justify-center group-hover:bg-brand-green/10 transition-colors shadow-sm">
                   <Icon className="w-6 h-6 text-brand-green" />

@@ -33,7 +33,7 @@ const ExplorePage = () => {
               <Link
                 key={category.slug}
                 to={`/explore/${category.slug}`}
-                className="flex gap-5 p-7 rounded-none bg-white shadow-soft border border-transparent hover:border-brand-green/20 hover:shadow-soft-lg transition-all group"
+                className="flex gap-5 p-7 rounded-none bg-white shadow-soft border border-transparent hover:border-brand-green/20 hover:shadow-soft-lg transition-all group min-w-0"
               >
                 <div className="flex-shrink-0 w-14 h-14 rounded-none bg-brand-cream flex items-center justify-center group-hover:bg-brand-green/10 transition-colors">
                   <Icon className="w-7 h-7 text-brand-green" />

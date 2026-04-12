@@ -43,11 +43,11 @@ const Gallery = () => {
 
         {/* Carousel */}
         <div
-          className="relative rounded-none overflow-hidden bg-gray-100 shadow-soft"
+          className="relative rounded-none overflow-hidden bg-gray-100 shadow-soft max-w-full"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          <div className="relative aspect-[16/9] md:aspect-[21/9]">
+          <div className="relative aspect-[16/9] md:aspect-[21/9] overflow-hidden max-w-full">
             {galleryImages.map((img, i) => (
               <button
                 key={i}
